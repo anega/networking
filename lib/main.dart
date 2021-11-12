@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:networking/domain/api/api_client.dart';
-import 'package:networking/example.dart';
+import 'package:networking/widgets/example.dart';
 
 void main() {
   runApp(const MyApp());
