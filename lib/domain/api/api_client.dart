@@ -29,7 +29,7 @@ class ApiClient {
     };
     final request = await client
         .postUrl(Uri.parse('https://jsonplaceholder.typicode.com/posts'));
-    request.headers.set('Content-type', 'application/json; charset=UTF-8');
+    request.headers.set(HttpHeaders.contentTypeHeader, ContentType.json);
     request.write(jsonEncode(params));
     final response = await request.close();
     final json = await response
