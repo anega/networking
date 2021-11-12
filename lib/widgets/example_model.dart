@@ -13,11 +13,11 @@ class ExampleWidgetModel extends ChangeNotifier {
     notifyListeners();
   }
 
-  void createPost() async {
-  //   final result = await apiClient.createPost(
-  //     title: 'First created post',
-  //     body: 'est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non',
-  //   );
+  Future<void> createPost() async {
+    final result = await apiClient.createPost(
+      title: 'First created post',
+      body: 'est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non',
+    );
   }
 }
 
